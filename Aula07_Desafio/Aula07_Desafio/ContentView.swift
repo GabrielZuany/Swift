@@ -11,15 +11,7 @@ struct ContentView: View {
     @StateObject var vm = ViewModel()
     
     var body: some View {
-//        List {
-//            ForEach(vm.results, id: \.self){
-//                rd in
-//                Text("\(rd.Country_Region!)")
-//            }
-//        }
-//        .onAppear(){
-//            vm.fetchResults()
-//        }
+
         ZStack {
             AsyncImage(url:URL(string:"https://conteudo.imguol.com.br/c/parceiros/40/2020/03/11/coronavirus-1583951542371_v2_900x506.jpg"))
             {
@@ -27,7 +19,7 @@ struct ContentView: View {
             }.frame(width: .infinity, height: .infinity).opacity(0.15)
             
             VStack{
-                MainView(cache: vm.cache, summaryStats: vm.summaryStats)
+                MainView(cache: vm.cache, summaryStats: vm.summaryStats, rawData: vm.rawData)
             }
         }
         .ignoresSafeArea()

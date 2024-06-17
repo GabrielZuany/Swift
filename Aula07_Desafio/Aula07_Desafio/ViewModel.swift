@@ -1,7 +1,7 @@
 import Foundation
 
 class ViewModel : ObservableObject{
-    @Published var results:[RawData] = []
+    @Published var rawData:[RawData] = []
     @Published var cache:CacheData?
     @Published var summaryStats: SummaryStats?
     
@@ -16,7 +16,7 @@ class ViewModel : ObservableObject{
             do{
                 let jsonDecoded = try JSONDecoder().decode(API.self, from:data)
                 DispatchQueue.main.async {
-                    self?.results = jsonDecoded.rawData
+                    self?.rawData = jsonDecoded.rawData
                     self?.cache = jsonDecoded.cache
                     self?.summaryStats = jsonDecoded.summaryStats
                 }

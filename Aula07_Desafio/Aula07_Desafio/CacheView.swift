@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CacheView: View {
-    @State var cache:CacheData?
+    @StateObject var vm = ViewModel()
     var body: some View {
         ZStack {
             AsyncImage(url:URL(string:"https://conteudo.imguol.com.br/c/parceiros/40/2020/03/11/coronavirus-1583951542371_v2_900x506.jpg"))
@@ -26,13 +26,16 @@ struct CacheView: View {
                     .padding()
                 VStack{
                     Text("Cache Info").bold().foregroundStyle(.white)
-//                    Text("Last Updated: \(cache?.lastUpdated)")
-//                    Text("Expires: \(cache?.expires)")
-//                    Text("Last Updated(TS): \(cache?.lastUpdatedTimestamp)")
-//                    Text("Expires(TS): \(cache?.expiresTimestamp)")
+                    Text("Last Updated: \(vm.cache?.lastUpdated ?? "nil")")
+                    Text("Expires: \(vm.cache?.expires ?? "nil")")
+                    Text("Last Updated(TS): \(vm.cache?.lastUpdatedTimestamp ?? 0.00)")
+                    Text("Expires(TS): \(vm.cache?.expiresTimestamp ?? 0.00)")
                 }
             }
         }.ignoresSafeArea()
+            .onAppear(){
+                vm.fetchResults()
+            }
     }
 }
 

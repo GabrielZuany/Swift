@@ -18,6 +18,7 @@
 		404E11382C1D03BE0032B82E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404E11372C1D03BE0032B82E /* Model.swift */; };
 		404E113C2C1D11A30032B82E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404E113B2C1D11A30032B82E /* MainView.swift */; };
 		404E113E2C1D15E90032B82E /* CacheView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404E113D2C1D15E90032B82E /* CacheView.swift */; };
+		40DAF5E62C20F3C6005D13F5 /* CountriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DAF5E52C20F3C6005D13F5 /* CountriesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		404E11372C1D03BE0032B82E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		404E113B2C1D11A30032B82E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		404E113D2C1D15E90032B82E /* CacheView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheView.swift; sourceTree = "<group>"; };
+		40DAF5E52C20F3C6005D13F5 /* CountriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				404E11372C1D03BE0032B82E /* Model.swift */,
 				404E113B2C1D11A30032B82E /* MainView.swift */,
 				404E113D2C1D15E90032B82E /* CacheView.swift */,
+				40DAF5E52C20F3C6005D13F5 /* CountriesView.swift */,
 			);
 			path = Aula07_Desafio;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				404E113E2C1D15E90032B82E /* CacheView.swift in Sources */,
 				404E11362C1D03850032B82E /* ViewModel.swift in Sources */,
 				404E110C2C1D03670032B82E /* Aula07_DesafioApp.swift in Sources */,
+				40DAF5E62C20F3C6005D13F5 /* CountriesView.swift in Sources */,
 				404E113C2C1D11A30032B82E /* MainView.swift in Sources */,
 				404E11382C1D03BE0032B82E /* Model.swift in Sources */,
 			);
